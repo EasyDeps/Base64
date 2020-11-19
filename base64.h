@@ -11,6 +11,9 @@
 #include <stdlib.h>
 #include <memory.h>
 
+#ifdef __cplusplus
+    extern "C" {
+#endif
 
 /***********************************************
 Encodes ASCCI string into base64 format string
@@ -27,5 +30,8 @@ decodes base64 format string into ASCCI string
 ***********************************************/
 char* base64_decode(char* cipher);
 
+#ifdef __cplusplus
+    }
+#endif
 
 #endif //BASE46_H
